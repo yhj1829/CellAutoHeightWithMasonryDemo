@@ -1,0 +1,9 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/HYBImageCliped" "${PODS_ROOT}/Headers/Public/HYBMasonryAutoCellHeight" "${PODS_ROOT}/Headers/Public/HYBNetworking" "${PODS_ROOT}/Headers/Public/Masonry"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/HYBImageCliped" "$PODS_CONFIGURATION_BUILD_DIR/HYBMasonryAutoCellHeight" "$PODS_CONFIGURATION_BUILD_DIR/HYBNetworking" "$PODS_CONFIGURATION_BUILD_DIR/Masonry"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/HYBImageCliped" -isystem "${PODS_ROOT}/Headers/Public/HYBMasonryAutoCellHeight" -isystem "${PODS_ROOT}/Headers/Public/HYBNetworking" -isystem "${PODS_ROOT}/Headers/Public/Masonry"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"HYBImageCliped" -l"HYBMasonryAutoCellHeight" -l"HYBNetworking" -l"Masonry" -framework "CoreGraphics" -framework "Foundation" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

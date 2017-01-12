@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  CellAutoHeightWithMasonryDemo
+//
+//  Created by 阳光 on 17/1/12.
+//  Copyright © 2017年 阳光. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry.h>
+#import <HYBMasonryAutoCellHeight/UITableViewCell+HYBMasonryAutoCellHeight.h>
+#import <HYBMasonryAutoCellHeight/UITableView+HYBCacheHeight.h>
+
+
+#import "UIView+Extention.h"
+
+
+// View 圆角和加边框
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+#define kmargin 10
+#define Font_Number(a)     [UIFont fontWithName:@"PingFangSC-Regular" size:a]
+
+#endif /* PrefixHeader_pch */

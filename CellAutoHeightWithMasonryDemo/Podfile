@@ -1,0 +1,7 @@
+target 'CellAutoHeightWithMasonryDemo' do
+
+pod 'HYBNetworking'
+pod 'HYBImageCliped'
+pod 'HYBMasonryAutoCellHeight'
+
+end
